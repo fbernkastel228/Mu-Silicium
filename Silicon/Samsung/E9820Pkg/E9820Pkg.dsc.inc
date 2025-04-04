@@ -24,7 +24,7 @@
   HAS_PSCI_MEMPROTECT_FAILING_ERRATA         = 0
 
 [BuildOptions]
-  *_*_AARCH64_CC_FLAGS = -march=armv8.2-a+crypto+rcpc
+  *_*_AARCH64_CC_FLAGS = -march=armv8-a+crypto+rcpc
 
 [PcdsFixedAtBuild]
   # Timer
@@ -44,7 +44,7 @@
 
   # SmBios
   gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Exynos (TM) 9820 @ 2.73 GHz"
-  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"E9820"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosProcessorCodename|"E9820"
 
   # CPU
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
@@ -56,7 +56,6 @@
   HwResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   ResetSystemLib|ArmPkg/Library/ArmSmcPsciResetSystemLib/ArmSmcPsciResetSystemLib.inf
   SoCPlatformLib|E9820Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
-  ExynosSpeedyLib|E9820Pkg/Library/ExynosSpeedyLib/ExynosSpeedyLib.inf
 
 [Components]
   E9820Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
