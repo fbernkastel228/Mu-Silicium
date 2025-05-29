@@ -49,6 +49,24 @@
   # CPU
   gArmPlatformTokenSpaceGuid.PcdCoreCount|8
   gArmPlatformTokenSpaceGuid.PcdClusterCount|3
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosMaxCpuFreq|2730
+
+  # CPU Caches
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosLevel1InstCacheSize|0x100
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosLevel1DataCacheSize|0x100
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosLevel2CacheSize|0x400
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosLevel3CacheSize|0x1000
+
+  # Memory Speed & Type
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosMemorySpeed|2750    # Unoffical Value
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosMemoryType|35
+
+  # DDR Info
+  gSamsungPkgTokenSpaceGuid.PcdDdrInfoOffset|0x2AC00
+  gSamsungPkgTokenSpaceGuid.PcdDdrSizeInfoOffset|0x848
+
+  # PMIC
+  gSamsungPkgTokenSpaceGuid.PcdInitS2mps22|TRUE
 
 [LibraryClasses]
   PlatformPrePiLib|E9830Pkg/Library/PlatformPrePiLib/PlatformPrePiLib.inf
@@ -58,6 +76,6 @@
   SoCPlatformLib|E9830Pkg/Library/SoCPlatformLib/SoCPlatformLib.inf
 
 [Components]
-  E9830Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
+  SamsungPkg/Drivers/PmicDxe/S2mps1922Dxe.inf
 
 !include SamsungPkg/SamsungPkg.dsc.inc

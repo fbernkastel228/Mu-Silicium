@@ -11,10 +11,17 @@
 
 [Packages]
   ArmPkg/ArmPkg.dec
-  MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  SamsungPkg/SamsungPkg.dec
 
 [LibraryClasses]
   BaseLib
   DebugLib
+  UefiBootServicesTableLib
+  ResetSystemLib
   IoLib
+
+[Protocols]
+  gEfiS2mps1922ProtocolGuid
+
