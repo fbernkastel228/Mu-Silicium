@@ -2367,11 +2367,11 @@
 
 <img align="right" src="Resources/Pictures/Xiaomi-Mi-6.png" width="290" alt="Preview">
 
-**State: Active** <br>
+**State: Inactive** <br>
 **Codename: sagit** <br>
-**Maintainer: ivnvrvnn** <br>
-**Contributors: ivnvrvnn** <br>
-**Tester: ivnvrvnn**
+**Maintainer: fbernkastel228** <br>
+**Contributors: fbernkastel228** <br>
+**Tester: fbernkastel228**
 
 ### UEFI Status
 
@@ -2379,10 +2379,10 @@
 |:-------------------|:-------------------------|:-----:|
 | Display            |                          | ✅    |
 | Internal Storage   |                          | ✅    |
-| Side Buttons       |                          | ❔    |
+| Side Buttons       |                          | ✅    |
 | USB Host Mode      |                          | ✅    |
-| USB Device Mode    |                          | ❔    |
-| USB Power Delivery |                          | ❔    |
+| USB Device Mode    |                          | ✅    |
+| USB Power Delivery |                          | ✅    |
 | Mass Storage       |                          | ❌    |
 | SD Card            | Mi 6 doesn't have sd slot| ❔    |
 | Windows Boot       |                          | ❌    |
