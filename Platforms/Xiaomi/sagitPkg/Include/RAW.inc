@@ -1,3 +1,4 @@
+
   FILE FREEFORM = A91D838E-A5FA-4138-825D-455E2303079E {
     SECTION UI = "BDS_Menu.cfg"
     SECTION RAW = Binaries/poplar/RawFiles/BDS_Menu.cfg
@@ -22,3 +23,4 @@
     SECTION UI = "BATTERY.PROVISION"
     SECTION RAW = Binaries/poplar/RawFiles/BATTERY.PROVISION
   }
+

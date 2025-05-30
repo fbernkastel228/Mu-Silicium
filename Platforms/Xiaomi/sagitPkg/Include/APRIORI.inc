@@ -1,3 +1,4 @@
+
 APRIORI DXE {
   # First, install the PCD driver and call DxeInit
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
@@ -118,8 +119,9 @@ APRIORI DXE {
   # MpParkDxe
   INF Binaries/generic/CobaltWP/MpPowerDxe/MpPowerDxe.inf
 
-  INF MSM8998Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
+  INF QcomPkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
   # MemoryMapDxe
   # AdapterInformationDxe
 }
+

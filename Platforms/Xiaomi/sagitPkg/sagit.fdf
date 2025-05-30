@@ -83,22 +83,21 @@ READ_LOCK_STATUS   = TRUE
   !include Include/DXE.inc
   !include Include/RAW.inc
 
-  INF EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
-
-  # BDS
+  # SmBios
   INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  INF MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe.inf
-  INF MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf
+  INF QcomPkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
-  # ACPI and SMBIOS
+  # ACPI
   INF MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   INF MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
-  INF MSM8998Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
-
-  # ACPI Tables
   !include Include/ACPI.inc
 
-  INF DfciPkg/IdentityAndAuthManager/IdentityAndAuthManagerDxe.inf
+  # Device Tree
+  #INF EmbeddedPkg/Drivers/DtPlatformDxe/DtPlatformDxe.inf
+  #FILE FREEFORM = 25462CDA-221F-47DF-AC1D-259CFAA4E326 {
+  #  SECTION RAW = sagitPkg/FdtBlob/msm8998-xiaomi-sagit.dtb
+  #  SECTION UI = "DeviceTreeBlob"
+  #}
 
   !include QcomPkg/Extra.fdf.inc
 
@@ -124,7 +123,7 @@ READ_LOCK_STATUS   = TRUE
 
   FILE FREEFORM = DDE58710-41CD-4306-DBFB-3FA90BB1D2DD {
     SECTION UI = "uefiplat.cfg"
-    SECTION RAW = Binaries/poplar/RawFiles/uefiplat.cfg
+    SECTION RAW = Binaries/sagit/RawFiles/uefiplat.cfg
   }
 
   FILE FV_IMAGE = 9E21FD93-9C72-4c15-8C4B-E77F1DB2D792 {
